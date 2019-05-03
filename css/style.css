@@ -1,0 +1,410 @@
+nav {
+  position: relative;
+}
+
+nav .nav-wrapper .fas {
+  font-size: 15px;
+}
+
+nav .nav-wrapper a {
+  text-decoration: none;
+}
+
+nav .nav-wrapper a:hover {
+  background: white;
+  color: black;
+}
+
+nav .nav-wrapper ul li ul {
+  position: absolute;
+  top: -100%;
+  z-index: 2;
+}
+
+nav .nav-wrapper .dropdown-content {
+  background: white;
+  color: black;
+}
+
+nav .nav-wrapper .dropdown-content a {
+  color: black;
+}
+
+nav .nav-wrapper .dropdown-content a:hover {
+  background: black;
+  color: white;
+}
+
+.intro {
+  background: url(/image/into.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.intro .about {
+  margin-top: 10vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+  padding-top: 20px;
+}
+
+.contact .container form {
+  width: 80%;
+  /* label color */
+  /* label focus color */
+  /* label underline focus color */
+  /* valid color */
+  /* invalid color */
+  /* icon prefix focus color */
+}
+
+.contact .container form .input-field label {
+  color: #000;
+}
+
+.contact .container form .input-field input[type="text"],
+.contact .container form .input-field input[type="password"],
+.contact .container form .input-field select {
+  color: black;
+}
+
+.contact .container form .input-field input[type="email"]:focus + label,
+.contact .container form .input-field input[type="password"]:focus + label {
+  color: #e34528;
+}
+
+.contact .container form .input-field input[type="email"]:focus, .contact .container form .input-field input[type="password"]:focus {
+  border-bottom: 1px solid #e34528;
+  -webkit-box-shadow: 0 1px 0 0 #e34528;
+          box-shadow: 0 1px 0 0 #e34528;
+}
+
+.contact .container form .input-field input[type="email"].valid {
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: 0 1px 0 0 red;
+          box-shadow: 0 1px 0 0 red;
+}
+
+.contact .container form .input-field input[type="email"].invalid {
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: 0 1px 0 0 red;
+          box-shadow: 0 1px 0 0 red;
+}
+
+.contact .container form .input-field .prefix.active {
+  color: #e34528;
+}
+
+.contact .container form .input-field input[type="submit"] {
+  background: black;
+  color: white;
+}
+
+.contact .container form .input-field input[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+
+footer .container .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .container .social-media a {
+  font-size: 30px;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .container .social-media a:hover {
+  color: white;
+}
+
+footer .container .social {
+  border-bottom: 1px solid black;
+}
+
+footer .container .details a, footer .container .details p {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+footer .container .details a:hover {
+  color: #9E9E9E;
+}
+
+.logo {
+  background: url(/image/lg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+}
+
+.smlogo {
+  background: url(/image/logo2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  display: none;
+}
+
+.signin {
+  background: url(/image/sign.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.signin .container {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.signin .container form {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 20vh;
+  padding: 10px;
+  width: 80%;
+  /* label color */
+  /* label focus color */
+  /* label underline focus color */
+  /* valid color */
+  /* invalid color */
+  /* icon prefix focus color */
+}
+
+.signin .container form img {
+  border-radius: 50%;
+}
+
+.signin .container form .input-field label {
+  color: white;
+}
+
+.signin .container form .input-field input[type="email"]:focus + label,
+.signin .container form .input-field input[type="password"]:focus + label {
+  color: #e34528;
+}
+
+.signin .container form .input-field input[type="email"]:focus, .signin .container form .input-field input[type="password"]:focus {
+  border-bottom: 1px solid #e34528;
+  -webkit-box-shadow: 0 1px 0 0 #e34528;
+          box-shadow: 0 1px 0 0 #e34528;
+}
+
+.signin .container form .input-field input[type="email"].valid {
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: 0 1px 0 0 red;
+          box-shadow: 0 1px 0 0 red;
+}
+
+.signin .container form .input-field input[type="email"].invalid {
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: 0 1px 0 0 red;
+          box-shadow: 0 1px 0 0 red;
+}
+
+.signin .container form .input-field .prefix.active {
+  color: #e34528;
+}
+
+.signin .container form .input-field input[type="submit"] {
+  background: black;
+  color: white;
+  padding: 5px 40px;
+}
+
+.signin .container form .input-field input[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+
+.signup {
+  background: url(/image/sign.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.signup .container {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.signup .container form {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 3vh;
+  padding: 10px;
+  width: 80%;
+  /* label color */
+  /* label focus color */
+  /* label underline focus color */
+  /* icon prefix focus color */
+}
+
+.signup .container form img {
+  border-radius: 50%;
+}
+
+.signup .container form .input-field label {
+  color: white;
+}
+
+.signup .container form .input-field input[type="email"]:focus + label,
+.signup .container form .input-field input[type="password"]:focus + label,
+.signup .container form .input-field input[type="text"]:focus + label {
+  color: #e34528;
+}
+
+.signup .container form .input-field input[type="email"]:focus, .signup .container form .input-field input[type="password"]:focus, .signup .container form .input-field input[type="text"]:focus {
+  border-bottom: 1px solid #e34528;
+  -webkit-box-shadow: 0 1px 0 0 #e34528;
+          box-shadow: 0 1px 0 0 #e34528;
+}
+
+.signup .container form .input-field .prefix.active {
+  color: #e34528;
+}
+
+.signup .container form .input-field input[type="submit"] {
+  background: black;
+  color: white;
+  padding: 5px 40px;
+}
+
+.signup .container form .input-field input[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+
+.booking {
+  background: url(/image/reg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.booking .container {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.booking .container form {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 10vh;
+  padding: 10px;
+  width: 80%;
+  /* label color */
+  /* label focus color */
+  /* label underline focus color */
+  /* icon prefix focus color */
+}
+
+.booking .container form img {
+  border-radius: 50%;
+}
+
+.booking .container form .input-field label {
+  color: white;
+}
+
+.booking .container form .input-field input[type="email"]:focus + label,
+.booking .container form .input-field input[type="password"]:focus + label,
+.booking .container form .input-field input[type="text"]:focus + label {
+  color: #e34528;
+}
+
+.booking .container form .input-field input[type="email"]:focus, .booking .container form .input-field input[type="password"]:focus, .booking .container form .input-field input[type="text"]:focus {
+  border-bottom: 1px solid #e34528;
+  -webkit-box-shadow: 0 1px 0 0 #e34528;
+          box-shadow: 0 1px 0 0 #e34528;
+}
+
+.booking .container form .input-field .prefix.active {
+  color: #e34528;
+}
+
+.booking .container form .input-field input[type="submit"] {
+  background: black;
+  color: white;
+  padding: 5px 40px;
+}
+
+.booking .container form .input-field input[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+
+.booking .container form .icons {
+  color: white;
+}
+
+.booking .container form select option {
+  color: white;
+}
+
+.service .container {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.approach .container, .location .container, .logged .container {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.location .map1 iframe {
+  width: 100%;
+}
+
+.location form .input-field input[type="submit"] {
+  background: black;
+  color: white;
+  padding: 5px 100px;
+}
+
+.location form .input-field input[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+
+.logged {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.logged .info a {
+  text-decoration: none;
+  color: black;
+}
+
+.logged .info a:hover {
+  color: #616161;
+}
+
+.logged .topic {
+  border-bottom: 1px solid black;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.logged .container .card .card-action a:hover {
+  text-decoration: none;
+  color: #424242;
+}
+/*# sourceMappingURL=style.css.map */

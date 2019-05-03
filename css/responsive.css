@@ -1,0 +1,15 @@
+
+.intro{
+    height: 50vh;
+}
+.logo{
+    display: none;
+}
+.smlogo{
+    display: block;
+}
+
+@media (max-width: 800px){
+    
+    
+}

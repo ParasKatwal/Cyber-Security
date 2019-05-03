@@ -1,0 +1,384 @@
+nav{
+    position: relative;
+    .nav-wrapper{
+
+        .fas{
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background: white;
+            color: black;
+        }
+        ul li ul{
+            position: absolute;
+            top: -100%;
+            z-index: 2;
+            
+        }
+        .dropdown-content{
+            
+            background: white;
+            color: black;
+            a{
+                color: black;
+            }
+            a:hover{
+                background: black;
+                color: white;
+            }
+        }
+    }
+}
+
+.intro{
+    background: url(/image/into.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+   
+    .about{
+        margin-top: 10vh;
+        background: rgba(0, 0, 0, 0.5)
+        
+    }
+}
+
+.contact{
+    padding-top: 20px;
+    .container{
+        form{
+            width: 80%;
+            /* label color */
+           .input-field label {
+               color: #000;
+           }
+           .input-field input[type="text"],
+           .input-field input[type="password"],
+           .input-field select{
+               color: black;
+           }
+           /* label focus color */
+           .input-field input[type="email"]:focus + label ,
+           .input-field input[type="password"]:focus + label{
+               color: #e34528;
+           }
+           /* label underline focus color */
+           .input-field input[type="email"]:focus, .input-field input[type="password"]:focus
+           {
+               border-bottom: 1px solid #e34528;
+               box-shadow: 0 1px 0 0 #e34528;
+           }
+           /* valid color */
+           .input-field input[type="email"].valid {
+               border-bottom: 1px solid red;
+               box-shadow: 0 1px 0 0 red;
+           }
+           /* invalid color */
+           .input-field input[type="email"].invalid {
+               border-bottom: 1px solid red;
+               box-shadow: 0 1px 0 0 red;
+           }
+           /* icon prefix focus color */
+           .input-field .prefix.active {
+               color: #e34528;
+           }
+           .input-field input[type="submit"]{
+               background: black;
+               color: white;
+           }
+           .input-field input[type="submit"]:hover{
+               background: white;
+               color: black;
+           }
+       }
+    }
+}
+
+footer{
+    .container{
+        .social-media{
+            display: flex;
+            justify-content: space-around;
+            a{
+                font-size: 30px;
+                color: black;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: white;
+            }
+        }
+        .social{
+            border-bottom: 1px solid black;
+        }
+        .details{
+            a, p{
+                color: #E0E0E0;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #9E9E9E;
+            }
+        }
+    }
+}
+
+.logo{
+    background: url(/image/lg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+
+.smlogo{
+    background: url(/image/logo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    display: none;
+}
+
+.signin{
+    background: url(/image/sign.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    .container{
+        
+        border: 1px solid rgba(0, 0, 0, 0);
+        form{
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 20vh;
+            padding: 10px;
+            img{
+                border-radius: 50%;
+            }
+            width: 80%;
+            /* label color */
+           .input-field label {
+               color: white;
+           }
+           /* label focus color */
+           .input-field input[type="email"]:focus + label ,
+           .input-field input[type="password"]:focus + label{
+               color: #e34528;
+           }
+           /* label underline focus color */
+           .input-field input[type="email"]:focus, .input-field input[type="password"]:focus
+           {
+               border-bottom: 1px solid #e34528;
+               box-shadow: 0 1px 0 0 #e34528;
+           }
+           /* valid color */
+           .input-field input[type="email"].valid {
+               border-bottom: 1px solid red;
+               box-shadow: 0 1px 0 0 red;
+           }
+           /* invalid color */
+           .input-field input[type="email"].invalid {
+               border-bottom: 1px solid red;
+               box-shadow: 0 1px 0 0 red;
+           }
+           /* icon prefix focus color */
+           .input-field .prefix.active {
+               color: #e34528;
+           }
+           .input-field input[type="submit"]{
+               background: black;
+               color: white;
+               padding: 5px 40px;
+           }
+           .input-field input[type="submit"]:hover{
+               background: white;
+               color: black;
+           }
+        }
+    }
+   
+}
+
+
+.signup{
+    background: url(/image/sign.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    .container{
+        
+        border: 1px solid rgba(0, 0, 0, 0);
+        form{
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 3vh;
+            padding: 10px;
+            img{
+                border-radius: 50%;
+            }
+            width: 80%;
+            /* label color */
+           .input-field label {
+               color: white;
+           }
+           /* label focus color */
+           .input-field input[type="email"]:focus + label ,
+           .input-field input[type="password"]:focus + label,
+           .input-field input[type="text"]:focus + label{
+               color: #e34528;
+           }
+           /* label underline focus color */
+           .input-field input[type="email"]:focus, .input-field input[type="password"]:focus, .input-field input[type="text"]:focus
+           {
+               border-bottom: 1px solid #e34528;
+               box-shadow: 0 1px 0 0 #e34528;
+           }
+           /* icon prefix focus color */
+           .input-field .prefix.active {
+               color: #e34528;
+           }
+           .input-field input[type="submit"]{
+               background: black;
+               color: white;
+               padding: 5px 40px;
+           }
+           .input-field input[type="submit"]:hover{
+               background: white;
+               color: black;
+           }
+        }
+    }
+   
+}
+
+.booking{
+    background: url(/image/reg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    .container{
+        
+        border: 1px solid rgba(0, 0, 0, 0);
+        form{
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 10vh;
+            padding: 10px;
+            img{
+                border-radius: 50%;
+            }
+            width: 80%;
+            /* label color */
+           .input-field label {
+               color: white;
+           }
+           /* label focus color */
+           .input-field input[type="email"]:focus + label ,
+           .input-field input[type="password"]:focus + label,
+           .input-field input[type="text"]:focus + label{
+               color: #e34528;
+           }
+           /* label underline focus color */
+           .input-field input[type="email"]:focus, .input-field input[type="password"]:focus, .input-field input[type="text"]:focus
+           {
+               border-bottom: 1px solid #e34528;
+               box-shadow: 0 1px 0 0 #e34528;
+           }
+           /* icon prefix focus color */
+           .input-field .prefix.active {
+               color: #e34528;
+           }
+           .input-field input[type="submit"]{
+               background: black;
+               color: white;
+               padding: 5px 40px;
+           }
+           .input-field input[type="submit"]:hover{
+               background: white;
+               color: black;
+           }
+        
+           .icons{
+               color: white;
+           }
+           select{
+               option{
+                   color: white;
+               }
+           }
+        }
+    }
+}
+
+.service{
+    .container{
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+}
+
+.approach, .location, .logged{
+    .container{
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+}
+
+.location{
+    .map1{
+        iframe{
+            width: 100%;
+        }
+    }
+    form{
+        .input-field input[type="submit"]{
+            background: black;
+            color: white;
+            padding: 5px 100px;
+        }
+        .input-field input[type="submit"]:hover{
+            background: white;
+            color: black;
+        }
+    }
+}
+
+.logged{
+    background: rgba(0, 0, 0, 0.2);
+    .info{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: #616161;
+        }
+    }
+    .topic{
+        border-bottom: 1px solid black;
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    .container{
+       .card{
+            .card-action{
+                a:hover{
+                text-decoration: none;
+                color: #424242;
+                }
+            }
+       }
+    }
+}

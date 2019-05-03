@@ -1,0 +1,24 @@
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+CREATE TABLE `images` (
+  `id` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `data` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `LoginAttempts` 
+(
+`IP` VARCHAR( 20 ) NOT NULL ,
+`Attempts` INT NOT NULL ,
+`LastLogin` DATETIME NOT NULL 
+)
